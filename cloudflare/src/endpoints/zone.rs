@@ -143,7 +143,7 @@ pub struct Meta {
     /// Indicates if URLs on the zone have been identified as hosting phishing content.
     pub phishing_detected: bool,
     /// Indicates whether the zone is allowed to be connected to multiple Railguns at once
-    pub multiple_railguns_allowed: bool,
+    pub multiple_railguns_allowed: Option<bool>,
 }
 
 /// A Zone is a domain name along with its subdomains and other identities
